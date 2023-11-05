@@ -86,7 +86,6 @@ const Students = () => {
   const theme = useTheme();
   const [students, setStudents] = useState<Student[]>([]);
   const [filieres, setFilieres] = useState<Filiere[]>([]);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [roles, setRoles] = useState<Role[]>([]);
   const [roleOptions, setRoleOptions] = useState<
     { value: string; label: string }[]
@@ -201,7 +200,7 @@ const Students = () => {
     setStudents(students);
     setFilieres(filieres);
     setRoles(fetchedRoles);
-
+    console.log(roles);
     setRoleOptions(
       fetchedRoles.map((role) => {
         return {

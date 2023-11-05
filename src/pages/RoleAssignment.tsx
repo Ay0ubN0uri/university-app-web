@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import AnimatedText from "@/components/ui/AnimatedText";
 import { motion } from "framer-motion";
 import {
@@ -87,7 +86,7 @@ const RoleAssignment = () => {
   const init = async () => {
     const students = await fetchAllStudents();
     const fetchedRoles: Role[] = await fetchAllRoles();
-    console.log(students, fetchedRoles);
+    console.log(students, fetchedRoles, roles);
     setStudents(students);
     setRoles(fetchedRoles);
     setRoleOptions(
